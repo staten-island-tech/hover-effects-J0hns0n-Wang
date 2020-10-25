@@ -1,0 +1,31 @@
+@import "_variables.scss";
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  background-color: red;
+  border: 0.5rem solid white;
+  font-size: 3rem;
+  margin: 1rem auto;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.btn-blue {
+  color: white;
+  background-color: color(red);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 0.5rem rgba(black, 0.4);
+  outline-offset: 1.5rem;
+}
+
+.btn:active {
+  transform: scaleY(-1px);
+  transform: scaleX(1.2) scaleY(1.3);
+  box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+}

@@ -5,7 +5,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: red;
+  background-color: black;
 }
 
 html,
@@ -15,7 +15,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: red;
+  background-color: black;
 }
 
 .btn,
@@ -23,34 +23,30 @@ body {
 .btn:visited {
   text-decoration: none;
   padding: 1.5rem 4rem;
-  background-color: red;
+  background-color: black;
   border: 0.5rem solid white;
   font-size: 3rem;
-  margin: 1rem auto;
+  margin: 2rem auto;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  position: relative;
 }
 
-.btn-blue {
+.btn-black {
   color: white;
+  outline: solid white;
+  outline-offset: 0;
 }
 
 .btn:hover {
+  outline-offset: 0.5rem;
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
-  -webkit-box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.4);
-  outline-offset: 1.5rem;
 }
 
 .btn:active {
-  -webkit-transform: scaleY(-1px);
-          transform: scaleY(-1px);
-  -webkit-transform: scaleX(1.2) scaleY(1.3);
-          transform: scaleX(1.2) scaleY(1.3);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0;
 }
 
 html,
@@ -60,23 +56,45 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: red;
+  background-color: black;
 }
 
 .fruits {
-  height: 15rem;
-  border-radius: 50%;
+  height: 10rem;
   margin: 3rem auto;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .fruits:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-filter: grayscale(0.5);
-          filter: grayscale(0.5);
-  border-radius: 0;
+  -webkit-transform: translateX(10rem) rotate(360deg) scale(1.5);
+          transform: translateX(10rem) rotate(360deg) scale(1.5);
+  -webkit-filter: grayscale(0.3);
+          filter: grayscale(0.3);
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+}
+
+.text-effect {
+  color: white;
+  font-size: 5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.text-effect:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  letter-spacing: 2rem;
+  color: red;
 }
 
 .container {

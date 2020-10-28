@@ -1,0 +1,29 @@
+@import "_variables.scss";
+
+.post {
+  background-color: white;
+  border-radius: 5rem;
+  margin: auto 60rem;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.bananas {
+  height: 15rem;
+  margin: 3rem auto;
+  transition: all 0.3s;
+}
+
+.content {
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.post:hover .content {
+  opacity: 1;
+}
+
+.post:hover .bananas {
+  transform: scale(1.1);
+}
